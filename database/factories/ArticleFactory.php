@@ -22,8 +22,8 @@ class ArticleFactory extends Factory
             ->all();
 
         return [
-            'title' => $faker->sentence(),
-            'body' => $faker->text(),
+            'title' => $this->faker->sentence(),
+            'body' => $this->faker->text(),
             'tags' => $tags,
         ];
     }

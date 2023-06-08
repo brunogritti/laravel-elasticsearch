@@ -12,7 +12,7 @@ class ArticlesTableSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('articles')->truncate();
-        factory(App\Article::class)->times(50)->create();
+        \DB::table('articles')->truncate();
+        \App\Models\Article::factory()->times(50)->create();
     }
 }
